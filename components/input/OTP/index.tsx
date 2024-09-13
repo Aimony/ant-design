@@ -8,7 +8,6 @@ import { getMergedStatus } from '../../_util/statusUtils';
 import { devUseWarning } from '../../_util/warning';
 import type { Variant } from '../../config-provider';
 import { ConfigContext } from '../../config-provider';
-import type { Variant } from '../../config-provider';
 import useCSSVarCls from '../../config-provider/hooks/useCSSVarCls';
 import useSize from '../../config-provider/hooks/useSize';
 import type { SizeType } from '../../config-provider/SizeContext';
