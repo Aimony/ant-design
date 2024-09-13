@@ -16,7 +16,6 @@ import toList from '../_util/toList';
 import { devUseWarning } from '../_util/warning';
 import type { Variant } from '../config-provider';
 import { ConfigContext } from '../config-provider';
-import type { Variant } from '../config-provider';
 import DefaultRenderEmpty from '../config-provider/defaultRenderEmpty';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import { FormItemInputContext } from '../form/context';
