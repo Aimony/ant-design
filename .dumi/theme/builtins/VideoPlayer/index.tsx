@@ -58,10 +58,9 @@ const VideoPlayer: React.FC<React.HtmlHTMLAttributes<HTMLVideoElement>> = ({
   }, [playing]);
 
   return (
-    <div
+    <button
       className={classNames(styles.container, className)}
-      tabIndex={0}
-      role="button"
+      type="button"
       title="play or pause"
       onClick={() => {
         setPlaying(!playing);
@@ -71,7 +70,7 @@ const VideoPlayer: React.FC<React.HtmlHTMLAttributes<HTMLVideoElement>> = ({
         <video ref={videoRef} className={styles.video} muted loop {...restProps} />
         <div className={styles.play}>{playing ? <PauseCircleFilled /> : <PlayCircleFilled />}</div>
       </div>
-    </div>
+    </button>
   );
 };
 

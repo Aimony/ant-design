@@ -71,15 +71,15 @@ const Progress: React.FC<Readonly<ProgressProps>> = ({ percent, prefixCls }) => 
         `${dotClassName}-progress`,
         safePtg <= 0 && hideClassName,
       )}
+      // biome-ignore lint/a11y/useSemanticElements: cannot be <progress /> which cannot contain a
+      role="progressbar"
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-valuenow={safePtg}
+      tabIndex={0}
     >
-      <svg
-        viewBox={`0 0 ${viewSize} ${viewSize}`}
-        // biome-ignore lint/a11y/noNoninteractiveElementToInteractiveRole: progressbar could be readonly
-        role="progressbar"
-        aria-valuemin={0}
-        aria-valuemax={100}
-        aria-valuenow={safePtg}
-      >
+      <svg viewBox={`0 0 ${viewSize} ${viewSize}`}>
+        <title>Loading...</title>
         <CustomCircle dotClassName={dotClassName} hasCircleCls />
         <CustomCircle dotClassName={dotClassName} style={circleStyle} />
       </svg>

@@ -94,11 +94,12 @@ const Divider: React.FC<DividerProps> = (props) => {
   }
 
   return wrapCSSVar(
+    // biome-ignore lint/a11y/useFocusableInteractive: separator is not focusable
     <div
       className={classString}
       style={{ ...divider?.style, ...style }}
       {...restProps}
-      // biome-ignore lint/a11y/useAriaPropsForRole: divider do not need aria-value
+      // biome-ignore lint/a11y/useSemanticElements: hr cannot have children
       role="separator"
     >
       {children && type !== 'vertical' && (

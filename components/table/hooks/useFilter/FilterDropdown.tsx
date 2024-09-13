@@ -541,9 +541,9 @@ const FilterDropdown = <RecordType extends AnyObject = AnyObject>(
         placement={direction === 'rtl' ? 'bottomLeft' : 'bottomRight'}
         rootClassName={rootClassName}
       >
-        <span
-          role="button"
+        <button
           tabIndex={-1}
+          type="button"
           className={classNames(`${prefixCls}-trigger`, {
             active: filtered,
           })}
@@ -552,7 +552,7 @@ const FilterDropdown = <RecordType extends AnyObject = AnyObject>(
           }}
         >
           {filterIcon}
-        </span>
+        </button>
       </Dropdown>
     </div>
   );

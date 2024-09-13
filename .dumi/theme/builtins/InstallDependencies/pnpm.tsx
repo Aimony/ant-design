@@ -24,10 +24,9 @@ const PnpmIcon: React.FC<IconProps> = (props) => {
     <span className={classNames(styles.iconWrap, className)} style={style}>
       <svg
         aria-hidden="true"
-        fill="#F69220"
         focusable="false"
+        fill="#F69220"
         height="1em"
-        role="img"
         stroke="#F69220"
         strokeWidth="0"
         viewBox="0 0 24 24"

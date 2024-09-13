@@ -145,12 +145,12 @@ const InternalCheckbox: React.ForwardRefRenderFunction<CheckboxRef, CheckboxProp
   const ariaChecked = indeterminate ? 'mixed' : undefined;
   return wrapCSSVar(
     <Wave component="Checkbox" disabled={mergedDisabled}>
-      {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
       <label
         className={classString}
         style={{ ...checkbox?.style, ...style }}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
+        htmlFor={checkboxProps.id}
       >
         {/* @ts-ignore */}
         <RcCheckbox

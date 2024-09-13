@@ -42,9 +42,7 @@ const App: React.FC = () => (
     options={options}
     optionRender={(option) => (
       <Space>
-        <span role="img" aria-label={option.data.label}>
-          {option.data.emoji}
-        </span>
+        <span aria-label={option.data.label}>{option.data.emoji}</span>
         {option.data.desc}
       </Space>
     )}

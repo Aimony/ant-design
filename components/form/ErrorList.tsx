@@ -106,6 +106,7 @@ const ErrorList: React.FC<ErrorListProps> = ({
               hashId,
             )}
             style={holderStyle}
+            // biome-ignore lint/a11y/useSemanticElements: <alert> is not existed
             role="alert"
           >
             <CSSMotionList

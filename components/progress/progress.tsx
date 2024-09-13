@@ -248,7 +248,9 @@ const Progress = React.forwardRef<HTMLDivElement, ProgressProps>((props, ref) =>
       ref={ref}
       style={{ ...progressStyle?.style, ...style }}
       className={classString}
+      // biome-ignore lint/a11y/useSemanticElements: <progress> cannot have children
       role="progressbar"
+      tabIndex={0}
       aria-valuenow={percentNumber}
       aria-valuemin={0}
       aria-valuemax={100}

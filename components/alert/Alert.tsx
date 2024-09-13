@@ -245,6 +245,7 @@ const Alert = React.forwardRef<AlertRef, AlertProps>((props, ref) => {
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
           onClick={onClick}
+          // biome-ignore lint/a11y/useSemanticElements: <alert> is not existed
           role="alert"
           {...restProps}
         >

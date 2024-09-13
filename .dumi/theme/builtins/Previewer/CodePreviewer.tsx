@@ -544,15 +544,10 @@ createRoot(document.getElementById('container')).render(<Demo />);
             entryName={entryName}
             onSourceChange={setLiveDemoSource}
           />
-          <div
-            tabIndex={0}
-            role="button"
-            className={styles.codeHideBtn}
-            onClick={() => setCodeExpand(false)}
-          >
+          <button type="button" className={styles.codeHideBtn} onClick={() => setCodeExpand(false)}>
             <UpOutlined />
             <FormattedMessage id="app.demo.code.hide.simplify" />
-          </div>
+          </button>
         </section>
       )}
     </section>
