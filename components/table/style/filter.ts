@@ -59,6 +59,8 @@ const genFilterStyle: GenerateStyle<TableToken> = (token) => {
           color: headerIconColor,
           fontSize: fontSizeSM,
           borderRadius,
+          background: 'none',
+          border: 0,
           cursor: 'pointer',
           transition: `all ${motionDurationSlow}`,
 

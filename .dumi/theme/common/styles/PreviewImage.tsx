@@ -161,6 +161,8 @@ export default () => {
 
         .motion-video-min {
           width: 390px;
+          border: 0;
+          background: none;
         }
 
         .motion-principle-wrapper {
